@@ -1,0 +1,168 @@
+{
+  "schema": 1,
+  "kind": "shirudo-attestation",
+  "version_id": "dd2706fc6febbad9af1baa76f31d0d1c9e99ae29c69d6f49fef961b43bd6c05e",
+  "ts": "2026-11-25T01:23:30Z",
+  "boot_id": "d0c52cdf-e389-4037-9f81-b0864dc27fa3",
+  "nonce": "0ce15bce5caa7b8e806cfed5ae715fb9b29c65941c54d4219d1978f75992c241",
+  "pcr_bank": "sha256",
+  "pcr_mask": 64255,
+  "pcrs": [
+    {
+      "index": 0,
+      "value": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "index": 1,
+      "value": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "index": 2,
+      "value": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "index": 3,
+      "value": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "index": 4,
+      "value": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "index": 5,
+      "value": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "index": 6,
+      "value": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "index": 7,
+      "value": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "index": 9,
+      "value": "f62f7baa40c673b1efb0f8883d1856ef09031553a1ec67a0c3500b5c49214f0e"
+    },
+    {
+      "index": 11,
+      "value": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "index": 12,
+      "value": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "index": 13,
+      "value": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "index": 14,
+      "value": "de7e6fcfd3461acca433d100eda511a774d351965d84b980b94c56a6e24ca364"
+    },
+    {
+      "index": 15,
+      "value": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "ak": {
+    "public": "0023000b00050072000000100018000b000300100020cbcca74f5dc0e3a5860e6352cd0c5cf3ec0ba550c9c32c11228f2c2fa457bcf400201a5cadd7785aaf37e93cb49186bedb9f9caaffcc858ac7e083e56bfcad301fb5",
+    "name": "000b9327b31aa8ba90bacd3b40c759caae5c01423dd54e7329625296f8ca1d89128a"
+  },
+  "ek": {
+    "type": "ecc",
+    "public": "0023000b000300b20020837197674484b3f81a90cc8d46a5d724fd52d76e06520b64f2a1da1b331469aa00060080004300100003001000203639ff494ad4532c19457c0d6816adb3a1e760feb8e23040fa6f3bf9853f40be00207d8c3b1b9b4190e89493326df18e69b21e6900a070fc0be4983d6533d2a8e099",
+    "name": "000b05e65e83e84a61620d660d9c972ad5448db8fe82ac0b881fc7bfd9220a2e9559"
+  },
+  "quote": {
+    "attest": "ff54434780180022000bb16da38c4c931a3593b726bafedac195c0280e4b2e653780c8228ea8e9d083eb00200ce15bce5caa7b8e806cfed5ae715fb9b29c65941c54d4219d1978f75992c24100000000019f9709000000040000000001202401250012000000000001000b03fffa000020ab6cd607c8de4c4809ae2dc82db1cd8a10125019373cbeb458f92c31cc5c9c15",
+    "signature": "0018000b002023b794e00723927d832591540998875ed0903b595c301e932f770296ae9f6151002019cce941daedc74ebf0044be4c7ae1f6ba60a09fb1a117bd918834427ce9a274"
+  },
+  "register": {
+    "nv_index": "0x01818E00",
+    "pcr": 9,
+    "name": "000bbefa6d91e45e60f7de0f40dedd717bf6105ef0a3587f5bff2c036dec0495973e",
+    "value": "b8c1d8cc7c1f618b78ce597fa3bd676699cfdd34af4f243e9af9f688fccec4dc",
+    "attest": "ff54434780140022000bb16da38c4c931a3593b726bafedac195c0280e4b2e653780c8228ea8e9d083eb00200ce15bce5caa7b8e806cfed5ae715fb9b29c65941c54d4219d1978f75992c24100000000019f978d00000004000000000120240125001200000022000bbefa6d91e45e60f7de0f40dedd717bf6105ef0a3587f5bff2c036dec0495973e00000020b8c1d8cc7c1f618b78ce597fa3bd676699cfdd34af4f243e9af9f688fccec4dc",
+    "signature": "0018000b0020e84c3daae8e6d902f1b36f0493cbef28732e804ff88135958cc0b28e91cebc9f002072e2ff5627cc02c243976cd11b3644f15971d9ae1a81d711bd48ee5f5a57495f"
+  },
+  "eventlog": [
+    {
+      "schema": 1,
+      "ts": "2026-07-27T20:44:10Z",
+      "nv_index": "0x01818E00",
+      "alg": "sha256",
+      "digest": "10f8404500be569991748b53c9873dd5d3cf5c5f4b4403b8cbf4ae30f0fbf0fd",
+      "type": "init",
+      "boot_id": "d0c52cdf-e389-4037-9f81-b0864dc27fa3",
+      "tpm_reset_count": 4,
+      "cert_sha256": "933a2384cf65a67b5e93a3518ca7649c26891c6d3795113065427a74bcab6050",
+      "certs": [
+        "de619d358b048360ae00ab5b58b8fa9e33fa7322d7fce9df9e199581342a86a4",
+        "f9de7866433ba1523b829b3e1b1ac652f550b907bd0ab367cb568c01087c3158"
+      ],
+      "set_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tree_root": "0a24bb3ace8579456b3478671eafb55590c53f72a2bf4f308c983d26939d7f69",
+      "set": [],
+      "pcr": 9,
+      "pcr_before": "0000000000000000000000000000000000000000000000000000000000000000",
+      "phase_pcr": 11,
+      "phase_before": "0000000000000000000000000000000000000000000000000000000000000000",
+      "bound_in": "initrd",
+      "nv_name": "000bbefa6d91e45e60f7de0f40dedd717bf6105ef0a3587f5bff2c036dec0495973e",
+      "nv_writer_public": "c0a6b15dd038e4b1b1499282190f71e08e5641fa44499ea1095363c23149499eede1cbf4474a7f1df2fbe58525ca8b3b6a153e34a57598398188ea7e88d42d69125197f08bebf013b44d9c7bc20c2aa8b99d40fcf13bae2314b97b78a74cee69450622b49fc6e786024f457c663d8de12b4d7422c58651cfc2780ea77cd7b8b206727b2098bf3c4abc691237d7680df6aa00b256441e1d7cb41b87859f4861b4721f1cdab55e4d93ab0b80cfc68436655bd4aeca10119ac6bc3ccdb694b7ad561371b9a1b234c3640040174e45d408caefa9ae92969362dd37719179cab3d0316b485cebdf02a9a5f81fef5153be52b5bbdadc31448bf2bc78fcf64aeabe759f593ffa2da4367cd87e6f1c44c733493209e9bfbcd908996c301d57dedcbb7600aec27b0cecaa81dc32127d1f6b5988c65a9e679f5e842039267b69558f3720ea3450c7df2ba40f1ae8d2d112853beac8ec066d2ba3d7019e2fa4c5fd64af1e33bccda50767b7a1448d56cb58fc33ee269b1d2b6e584c136c7afccb68eae96c3d",
+      "anchor": "nvpcr-init:shirudo:0x1818e00:000bbefa6d91e45e60f7de0f40dedd717bf6105ef0a3587f5bff2c036dec0495973e",
+      "anchor_digest": "2f034fa5934eb250f370ef6a70890712b520ca5e263d9d68bec845c12ea92303",
+      "chain": "d80b11ac24fbf5f1c765ee262049b807fcab565a122a6f5a73478acc11796f18"
+    },
+    {
+      "schema": 1,
+      "ts": "2026-11-25T01:23:19Z",
+      "nv_index": "0x01818E00",
+      "alg": "sha256",
+      "digest": "45322524d39391ea939af0d89160914f405cef3535fb538fe03b7719f6020851",
+      "type": "upatch_load",
+      "boot_id": "d0c52cdf-e389-4037-9f81-b0864dc27fa3",
+      "upatch": {
+        "name": "cve-2026-31431-alg-splice-block",
+        "payload_sha256": "6f2e169e4b727c2ca69b0a9ab73be686b9fd909616683ddf8455d016ef3563fd"
+      }
+    },
+    {
+      "schema": 1,
+      "ts": "2026-11-25T01:23:20Z",
+      "nv_index": "0x01818E00",
+      "alg": "sha256",
+      "digest": "8da74e2faee5b097a4b16e0399e385067e3239e35ff80b8770d7339af655cac6",
+      "type": "tree_op",
+      "boot_id": "d0c52cdf-e389-4037-9f81-b0864dc27fa3",
+      "tree": {
+        "seq": 9,
+        "op": "add",
+        "id": "cve-2026-31431-alg-splice-block",
+        "operation_digest": "sha256:1af44ce2ff003140eb5dd32405960e9c5963480b6ac0f76fd9df4c1657dad29f"
+      },
+      "chain": "b8c1d8cc7c1f618b78ce597fa3bd676699cfdd34af4f243e9af9f688fccec4dc"
+    }
+  ],
+  "config": {
+    "schema": 1,
+    "pcr": 14,
+    "reset_count": 4,
+    "restart_count": 0,
+    "initial_pcr": "0000000000000000000000000000000000000000000000000000000000000000",
+    "events": [
+      {
+        "sequence": 5,
+        "kind": 1,
+        "root_hash": "6a5f06da15f0441e62e0bda7962c7f271875f7af6a0192ee345090137165a2ee"
+      }
+    ]
+  },
+  "credential": null,
+  "ek_certificate": "MIIBojCCAUigAwIBAgIUeMiilh0JO/aUugRkRUYb/dLLhX4wCgYIKoZIzj0EAwIwNzE1MDMGA1UEAwwsc2hpcnVkbyB0ZXN0IGVuZG9yc2VtZW50IENBIDdhZTc4NmNmYWNmNzA4MjUwHhcNMjYxMTI0MTc0OTE4WhcNMzYxMTIxMTc0OTE4WjAnMSUwIwYDVQQDDBxzaGlydWRvIHRlc3QgZW5kb3JzZW1lbnQga2V5MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAENjn/SUrUUywZRXwNaBats6HnYP644jBA+m87+YU/QL59jDsbm0GQ6JSTMm3xjmmyHmkAoHD8C+SYPWUz0qjgmaNCMEAwHQYDVR0OBBYEFEefyi6rCJUJeUpIYHJJiyJ+qRVpMB8GA1UdIwQYMBaAFFm6fAAfdlmayVgB/L1n48FrVudSMAoGCCqGSM49BAMCA0gAMEUCID/oIYwcjycktDOHEgl9ktU1aqphlooLsPVNyRih90wxAiEA/0kZdk4bRllLEjBlfyHYtOyqMZmTaup9efkfZ+Nbu2A=",
+  "logs": {
+    "firmware": null,
+    "systemd": "HnsicGNyIjo5LCJkaWdlc3RzIjpbeyJoYXNoQWxnIjoic2hhMjU2IiwiZGlnZXN0IjoiMmYwMzRmYTU5MzRlYjI1MGYzNzBlZjZhNzA4OTA3MTJiNTIwY2E1ZTI2M2Q5ZDY4YmVjODQ1YzEyZWE5MjMwMyJ9XSwiY29udGVudF90eXBlIjoic3lzdGVtZCIsImNvbnRlbnQiOnsic3RyaW5nIjoibnZwY3ItaW5pdDpzaGlydWRvOjB4MTgxOGUwMDowMDBiYmVmYTZkOTFlNDVlNjBmN2RlMGY0MGRlZGQ3MTdiZjYxMDVlZjBhMzU4N2Y1YmZmMmMwMzZkZWMwNDk1OTczZSIsImJvb3RJZCI6ImQwYzUyY2RmZTM4OTQwMzc5ZjgxYjA4NjRkYzI3ZmEzIiwidGltZXN0YW1wIjo5NjkzNjk5LCJldmVudFR5cGUiOiJudnBjci1pbml0In19Cg=="
+  }
+}

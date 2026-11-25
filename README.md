@@ -24,7 +24,7 @@ Zero dependencies. Node 22.18 or later runs the TypeScript directly.
 
 ```sh
 git clone https://github.com/rootz-global/rootz-shirudo-verify && cd rootz-shirudo-verify
-npm test                                                    # 11 tests, pinned against real Shirudo output
+npm test                                                    # 14 tests, pinned against real Shirudo output
 
 # 1. Replay a node's eventlog to the register its TPM quoted
 node src/cli.ts replay examples/after-seq1.evidence.json
@@ -36,6 +36,8 @@ node src/cli.ts plan examples/after-seq1.evidence.json examples/publication.json
 node src/cli.ts arrival plan.json examples/after-seq2.evidence.json        # arrived: true
 node src/cli.ts arrival plan.json examples/after-seq1.evidence.json        # arrived: false (exit 1)
 ```
+
+A full run on a real target, with every verdict re-checkable from its files, is in [`runs/2026-11-25-known-state`](runs/2026-11-25-known-state).
 
 The examples are one boot of a Shirudo test target (swtpm, arm64, `shirudo@0132734`). They hold `attest` evidence after
 tree operation 1 and after operation 2, plus the tree publication. The plan predicts `912531b9…`, the value the TPM

@@ -1,0 +1,26 @@
+{
+  "boot_id": "d0c52cdf-e389-4037-9f81-b0864dc27fa3",
+  "from_register": "d80b11ac24fbf5f1c765ee262049b807fcab565a122a6f5a73478acc11796f18",
+  "from_seq": 8,
+  "to_seq": 9,
+  "operations": [
+    {
+      "seq": 9,
+      "operation_digest": "sha256:1af44ce2ff003140eb5dd32405960e9c5963480b6ac0f76fd9df4c1657dad29f"
+    }
+  ],
+  "events": [
+    {
+      "type": "upatch_load",
+      "seq": 9,
+      "name": "cve-2026-31431-alg-splice-block",
+      "digest": "45322524d39391ea939af0d89160914f405cef3535fb538fe03b7719f6020851"
+    },
+    {
+      "type": "tree_op",
+      "seq": 9,
+      "digest": "8da74e2faee5b097a4b16e0399e385067e3239e35ff80b8770d7339af655cac6"
+    }
+  ],
+  "to_register": "b8c1d8cc7c1f618b78ce597fa3bd676699cfdd34af4f243e9af9f688fccec4dc"
+}

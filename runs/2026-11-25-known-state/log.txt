@@ -1,0 +1,42 @@
+== start state ==
+  node history: 1:instructed 2:instructed 3:acked-incident 4:instructed 5:instructed 6:acked-incident 7:instructed 8:acked-incident | cursor 8
+  attest: verify ok; Rootz replay match; rows ["instructed-not-applied(unavailable) seq1","instructed-not-applied(unavailable) seq2","instructed-not-applied(unavailable) seq4","instructed-not-applied(unavailable) seq5","instructed-not-applied(unavailable) seq7"]
+  START: tree seq 8 root 9624d2908730c444… | node register d80b11ac24fbf5f1… boot d0c52cdf
+
+== the officer's instruction, bound to the start state ==
+  instruction transition: seq 9 9624d2908730… → 2a6d7953c378…
+  gate, instruction bound to a STALE start: REFUSED shirudo-transition-stale | tree head still 8
+  [shirudo] tree append → oci://127.0.0.1:15444/shirudo/local-tree:stable sha256:057594321681d47c66e0a3630ebc15b48c51ef56dcafa94d3cdd8c7463583b78
+  delivered to node wallet as note 15
+  gate ACCEPTED seq 9 sha256:1af44ce2ff003140… shirudo.transition-from:pass shirudo.transition-to:pass
+  tree arrived at predicted root: true
+
+== owner approves the TRANSITION before it happens; key released sealed to the predicted end ==
+  plan: register d80b11ac24fbf5f1… → b8c1d8cc7c1f618b… via upatch_load(seq9) tree_op(seq9)
+  owner signed transition.approve as note 16
+  key authority (BEFORE the upgrade): RELEASED history-instructed-or-acknowledged:ok start-attest-verify:ok start-register-replay:ok start-no-measured-without-instruction:ok start-no-direct-load:ok plan-starts-at-quoted-state:ok plan-instructed:ok
+  NODE tries to open it BEFORE the upgrade: {"unsealed": false, "reason": "TPM PolicyNV refused: the register is not the approved value", "tpm": "07:Esys_PolicyNV() Esys Finish ErrorCode (0x00000126) \nERROR: Esys_PolicyNV(0x126) - tpm:error(2.0): policy failure in math operation or an invalid authPolicy value\nERROR: Unable to run tpm2_policynv\n"}
+make: *** [Makefile:226: vm-ssh] Error 2
+
+== the upgrade ==
+  receiver (wallet): sync 9:instructed
+  [shirudo] sync → {"schema":1,"dry_run":false,"selected":1,"skipped":0,"applied":1,"module_skipped":0,"tpm_available":true,"last_seq":9,"projection_root_tpm":
+  probe: SPLICE_BLOCKED
+  NODE opens it AFTER the upgrade: {"unsealed": true, "opened": true, "key_sha256": "665b94cb7c62d5bef289ada5ab632f9fc2b5b24b90c53a87c83c1c82430b2330"} | expected key_sha256 665b94cb7c62d5be…
+  attest: verify ok; Rootz replay match; rows ["instructed(verified) seq9","instructed-not-applied(unavailable) seq1","instructed-not-applied(unavailable) seq2","instructed-not-applied(unavailable) seq4","instructed-not-applied(unavailable) seq5","instructed-not-applied(unavailable) seq7"]
+  arrival: ON PLAN same-boot:ok start-on-path:ok path-exact:ok end-value:ok
+
+== second transition, with a rogue op slipped onto the path ==
+  [shirudo] tree append → oci://127.0.0.1:15444/shirudo/local-tree:stable sha256:bcb3b94cf7cc908d87acffec68b470bc158c5c7759590dc800a10ed7360bbf36
+  delivered to node wallet as note 19
+  gate ACCEPTED seq 10 sha256:f559a15d10f1459a… shirudo.transition-from:pass shirudo.transition-to:pass
+  key 2 released before the upgrade: RELEASED
+  [shirudo] rogue add around the gate (no Rootz order): oci://127.0.0.1:15444/shirudo/local-tree:stable sha256:d8a9579600bcd35794ce5079d96178c6a62
+  receiver: hold 10:instructed 11:no-instruction
+  root forces the sync: {"schema":1,"dry_run":false,"selected":2,"skipped":0,"applied":2,"module_skipped":0,"tpm_available":true,"last_seq":11,"
+  NODE tries to open key 2: {"unsealed": false, "reason": "TPM PolicyNV refused: the register is not the approved value", "tpm": "07:Esys_PolicyNV() Esys Finish ErrorCode (0x00000126) \nERROR: Esys_PolicyNV(0x126) - tpm:error(2.0): policy failure in math operation or an invalid authPolicy value\nERROR: Unable to run tpm2_policynv\n"}
+make: *** [Makefile:226: vm-ssh] Error 2
+  attest: verify ok; Rootz replay match; rows ["instructed(verified) seq9","instructed(verified) seq10","measured-without-instruction(failed) seq11","instructed-not-applied(unavailable) seq1","instructed-not-applied(unavailable) seq2","instructed-not-applied(unavailable) seq4","instructed-not-applied(unavailable) seq5","instructed-not-applied(unavailable) seq7"]
+  arrival: OFF PLAN path-exact: predicted 2 event(s): upatch_unload,tree_op; measured 4: upatch_unload,tree_op,upatch_load,tree_op | end-value: 10cbd0443c19aa85… vs predicted 6921072503154486…
+
+  node wallet: 0:wallet.create 1:member.add 2:writeauth.grant 3:instruction 4:state.approve 5:key.release 6:key.refusal 7:instruction 8:state.approve 9:key.refusal 10:incident.ack 11:incident.ack 12:key.release 13:key.refusal 14:incident.ack 15:instruction 16:transition.approve 17:key.release 18:transition.arrived 19:instruction 20:transition.approve 21:key.release 22:transition.arrived | chain ok

@@ -1,0 +1,961 @@
+[
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 0,
+    "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+    "type": "wallet.create",
+    "author": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+    "at": "2026-11-24T18:59:33.824Z",
+    "body": {
+      "label": "node rootz4",
+      "owner": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+      "owner_public_key": "0461432799a2d686bfa6ef364ad79aad8ba04c5e1c1d10867b154fcb0cb38904de47f2faf33630a8dfea7f2895c87e7520bc5344f1eecfb2c45ab50bef4fdcd2a2"
+    },
+    "sig": "0x95a577e510ba041a1996979a9e2e84159752410a9349ef9d4b71ba2d896aee0430033252da35aef3b47eb40c09ae63ded64bb9bb35dd82d092a1cf8c1857d9ac1c"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 1,
+    "prev": "37fe2e3c4897c28191cef3de948d96288ca0531608c593c857cf99acf537ea32",
+    "type": "member.add",
+    "author": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+    "at": "2026-11-24T18:59:40.829Z",
+    "body": {
+      "address": "",
+      "public_key": "043cd1f4814c33735bb2ebf1774264db8d7e58a8e75bc04abeb87c7d86ed4b589961ed0e3c6a481f55ebe0ff1edf05c1b017f40089201d7b3a842840397d2df406",
+      "role": "node",
+      "enrollment": {
+        "ak_name": "000b9327b31aa8ba90bacd3b40c759caae5c01423dd54e7329625296f8ca1d89128a",
+        "key": "secp256k1 member key generated in the node, TPM-sealed under PolicyAuthorize(owner)"
+      }
+    },
+    "sig": "0x6d5227ee6b250cea31499a4e66f50e48153d9771372a28180f783fdcdc32cc397ffbd4760502bcd634a9c71cb302f1dacff2b15bdccf26f3e715c659efc7c33f1c"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 2,
+    "prev": "c659f95561f20bae3322cda3ca78117a01358ebf9f8316050c1967521588ef4a",
+    "type": "writeauth.grant",
+    "author": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+    "at": "2026-11-24T18:59:40.830Z",
+    "body": {
+      "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+      "writer": "0x20189b6b4a1d922d28fbeda383e6a7999ecb9e0a",
+      "types": [
+        "instruction"
+      ],
+      "expires_at": "2026-12-24T18:59:40.830Z"
+    },
+    "sig": "0x38f92c6389d56fa31288cb4b9b3ea690ada95431349787638b78102fd3aea6e32eda743afdcd68ba9634f3787f5e7d9fff65243527e248b6481e6b05a11e84451c"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 3,
+    "prev": "2d95c3540596e0621badf34c93fd5c8c5e00ce999e8da0b9ac5148e038ee5f05",
+    "type": "instruction",
+    "author": "0x20189b6b4a1d922d28fbeda383e6a7999ecb9e0a",
+    "at": "2026-11-24T18:59:42.035Z",
+    "body": {
+      "order": {
+        "body": {
+          "kind": "ask-orders.order.v1",
+          "action": "policy.change",
+          "change": "widen",
+          "issuer": {
+            "account": "officer-lab",
+            "authority_root": "eip155:1:0xD36AAf65a91bB7dc69942cF6B6d1dBa4Ef171664"
+          },
+          "target": {
+            "gateway": "oci://127.0.0.1:15444/shirudo/local-tree",
+            "sandbox": "local-tree"
+          },
+          "policy": {
+            "format": "shirudo.tree-operation.v1",
+            "digest": "sha256:ImfsY_Zc2x_We0CD8XdAYEQnER-MIa-D28k8Mw-z0D4"
+          },
+          "boundary": {
+            "ref": "sha256:JHHl080IXHmlNjLBxekvAELiFdXmvpbrMfMVvD36KvQ",
+            "prover": {
+              "tool": "rootz.shirudo-evidence",
+              "version": "0.1.0",
+              "verdict": "contained",
+              "output": "sha256:v12FxBwS9ELZ9sbPNrTdZfHZqCWFJehUdIxj0F3fUNQ"
+            }
+          },
+          "supersedes": "sha256:0rvn5ZDFWzpIfLvqa4ibqQ_uU7xbBd-nVi7djC0aQHg",
+          "not_before": "2026-11-24T18:58:41.727Z",
+          "expires": "2026-12-24T18:59:41.727Z",
+          "nonce": "QQbKVtu1PWu_vN52VFC_pg"
+        },
+        "proofs": [
+          {
+            "suite": "rootz.sign-mcp.v1",
+            "envelope": {
+              "v": 1,
+              "iss": "lab.rootz.global",
+              "kid": "officer-lab",
+              "canon": "RFC8785",
+              "payload": {
+                "alg": "sha-256",
+                "hash": "Nozva_d8x4-TUR3rPA6-M4IATI_EjLKiFaYm6rG4RlU"
+              },
+              "ts": "2026-11-24T18:59:41Z",
+              "exp": "2026-11-24T19:04:41Z",
+              "nonce": "omyh-NzWnFcNE042RBJyzg",
+              "ctx": {
+                "kind": "ask-orders.order.v1"
+              },
+              "algs": [
+                "ecdsa-p256",
+                "ed25519"
+              ],
+              "sigs": {
+                "ecdsa-p256": "MEUCIQDkmIO_5HB6hA7CKlfXdzWiUHtCoCCRYGuadsok4GBAaQIgfOrUoUEgUZeoKEPcWkbGuRb3QWrfFr049VWR2LQ2PHk",
+                "ed25519": "FyFVBVeGVpfS050nkS0xORNVVjml_8aUgv8N9AMUvTbOnAsnTI5yofRW9EqPx5emcwKuF793P-GE3oL-QPj4DA"
+              }
+            }
+          }
+        ]
+      },
+      "instruction": {
+        "format": "shirudo.tree-operation.v1",
+        "tree": {
+          "repository": "oci://127.0.0.1:15444/shirudo/local-tree",
+          "tree_id": "local-tree"
+        },
+        "operation": {
+          "op": "add",
+          "id": "cve-2026-31431-alg-splice-block",
+          "selector": {
+            "kconfig": {
+              "CONFIG_CRYPTO_USER_API_AEAD": [
+                "m",
+                "y"
+              ]
+            },
+            "labels": {
+              "role": [
+                "local"
+              ]
+            }
+          },
+          "artifact": {
+            "repository": "oci://127.0.0.1:15444/shirudo/local-tree",
+            "manifest_digest": "sha256:2ba05f37a5246c864a3df64319e5e7ed6c45ebefcd805abe168cb006623f53b0",
+            "layer_digest": "sha256:7ee74c42bb94304afa185b803ad0b764c5870f48148eee30eed8a7d8b3978215",
+            "payload_sha256": "sha256:3de645367160974f77c5f3b8c72e48a8d88b684a567258721669fe7d8930db4f"
+          }
+        },
+        "fixes": [
+          "CVE-2026-31431"
+        ],
+        "effect": "enforce",
+        "stage": "canary",
+        "evidence": [
+          {
+            "role": "advisory",
+            "digest": "sha256:QeexSrT7qwIrYU4Tsw6eKbYo7iZYZFlqlvQzjNycRYk",
+            "receipt": null
+          },
+          {
+            "role": "authoring",
+            "digest": "sha256:S-wMTyqZkgv_noK-B-d_sBbBEYUgpiOrwvkJ0Y2Gt74",
+            "receipt": null
+          },
+          {
+            "role": "build",
+            "digest": "sha256:SJp-v-W6NxuGeweUFFPwoDQZtBsAxLOngU4GYzbo-pI",
+            "receipt": null
+          }
+        ]
+      },
+      "accepted_at": "2026-11-24T18:59:42.035Z",
+      "seq": 5,
+      "operation_digest": "sha256:4c53bba691b62e006d3f5381f2740b4ea6d1f1ebe5d66204d63ab29cc486362e"
+    },
+    "sig": "0x837654e899ab1fd09c184dd7c7016acf301beeb10f9b4f9874200a4aa033e2d7341d8170c25105e7bae5e0d5bd739dc34c3261d5aa46290ed0cb864defd4e46e1c"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 4,
+    "prev": "3a8284d6e5d6c431a27f000412fc2fd5f6e896b492aa059472ba7a95576469b4",
+    "type": "state.approve",
+    "author": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+    "at": "2026-11-24T19:02:10.667Z",
+    "body": {
+      "register": "74b18eff329cc4fc0ac8e0a03a1a7e3ec31c5475c4d4ad63c2b8c7d7460f3649",
+      "tpm_policy_digest": "4e8d8db7d2495a30cbe2e80cb867c1853bb5a230fe090b21c3fed7e3423b4cea",
+      "policy_signature_b64": "e2dksbAatPsoHM3yzEC7yWCaEYQLeG9Jg5vVTlg+AoRzpkCFDNhxV0cnxn1tDzf2UlFKR/iofNF0jHjW/qTmzG77uQLNunYZ+5jhqvixm0FP/QvErve8XajsqplGTpuo/2pXUTfxACjqOxqexEpyaP8FoO8+M/paZnLFs1CPydaohZB82CDW5rALlqZo5NQN+y7h3/qKvK+0PLjVZXNLb2q1DAIc8UXIqtXGuC/bLCa0cnvW9pEO/zbCRuo+SY0aQkYrQkvevQTJ4yVsIDG5wLSF/GDZxHXhGvEzwtOj/AF8wOzcoEcdK9gveksM0xEpUfi9oUoKIYDzyKH3vnkiWA==",
+      "basis": "PolicyNV(0x01818E00 eq register) under PolicyAuthorize(owner)"
+    },
+    "sig": "0x2553a1edace0f7dc61606e96873d1f8c6d4d664b1ec6411d653755ee3e2b22d03ee1cfe79049a25f9dbd3767d0a1dcd5ed265202d56f1ec95bc522a701fac7541b"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 5,
+    "prev": "3936c7876f37cdddb072f929cd6fa22dc9c583f1c8f608ce718d37694a0d2127",
+    "type": "key.release",
+    "author": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+    "at": "2026-11-24T19:02:10.686Z",
+    "body": {
+      "purpose": "shielded-service",
+      "to": "043cd1f4814c33735bb2ebf1774264db8d7e58a8e75bc04abeb87c7d86ed4b589961ed0e3c6a481f55ebe0ff1edf05c1b017f40089201d7b3a842840397d2df406",
+      "sender_public_key": "0461432799a2d686bfa6ef364ad79aad8ba04c5e1c1d10867b154fcb0cb38904de47f2faf33630a8dfea7f2895c87e7520bc5344f1eecfb2c45ab50bef4fdcd2a2",
+      "condition": {
+        "policy": "release-only-in-an-instructed-measured-state",
+        "evidence": "f8633d08f0dc120013c7ff55d5f6e62c7e1367701587dbe5a8f32897bdaa7007",
+        "register": "74b18eff329cc4fc0ac8e0a03a1a7e3ec31c5475c4d4ad63c2b8c7d7460f3649",
+        "ak_name": "000b9327b31aa8ba90bacd3b40c759caae5c01423dd54e7329625296f8ca1d89128a"
+      },
+      "key_sha256": "f9848cdd4114fe23ece7b50fb9fb90dccc3763577d7fbbfdd14f5c9ef6625456",
+      "package": {
+        "ciphertext": "0e27b27496cd90d8e55f496771b0aa66a64e6538962004175ce284abc3bfddba39ea9fa81929e947f638ae72e356526eeb",
+        "iv": "1f759d324c9e6965e149a58a",
+        "authTag": "2dcc8a1362352627c2b98825953c4e65"
+      }
+    },
+    "sig": "0xbf0346915096239960743dceee1a5613373a63bd3da91a8466ccb331d9f9af2549eee70486a98ad10f03b342eba74f2914eceb03c56d48e6558ef7729b63cf831c"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 6,
+    "prev": "196a6286e22498003195f10f0d9893ebc4234dbbedd4d24875356c32bf406a3c",
+    "type": "key.refusal",
+    "author": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+    "at": "2026-11-24T19:02:37.887Z",
+    "body": {
+      "purpose": "shielded-service",
+      "condition": {
+        "policy": "release-only-in-an-instructed-measured-state",
+        "evidence": "3245ca1961fa8a3b0512a32b2028660ed316abfaba62166786978df370362f37",
+        "register": "6d93c426f71f1e7c61f3481a4e760f8f45d57722dfcb65d4591e0b2469abac2f",
+        "ak_name": "000b9327b31aa8ba90bacd3b40c759caae5c01423dd54e7329625296f8ca1d89128a"
+      },
+      "rows": [
+        {
+          "check": "no-measured-without-instruction",
+          "pass": false,
+          "detail": "1 row(s)"
+        },
+        {
+          "check": "approved-state",
+          "pass": false,
+          "detail": "6d93c426f71f1e7c"
+        }
+      ]
+    },
+    "sig": "0x064f25867426a206d9af3f78cd7ef026aec8a7f4fa2009fd609d8ba925815b29460549ce8918dd92f09e8c3a6ca6c543c9e8bbbb73d57f255ed579ece1d34b4e1c"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 7,
+    "prev": "1da5d9f11f22116adc7764ada9c0ef99b44994c273d92adc08f4a9840b219508",
+    "type": "instruction",
+    "author": "0x20189b6b4a1d922d28fbeda383e6a7999ecb9e0a",
+    "at": "2026-11-24T19:39:28.940Z",
+    "body": {
+      "order": {
+        "body": {
+          "kind": "ask-orders.order.v1",
+          "action": "policy.change",
+          "change": "widen",
+          "issuer": {
+            "account": "officer-lab",
+            "authority_root": "eip155:1:0xD36AAf65a91bB7dc69942cF6B6d1dBa4Ef171664"
+          },
+          "target": {
+            "gateway": "oci://127.0.0.1:15444/shirudo/local-tree",
+            "sandbox": "local-tree"
+          },
+          "policy": {
+            "format": "shirudo.tree-operation.v1",
+            "digest": "sha256:JELhxppsfx004ul-cWVu1k7HltlaewEyjRtxFwR6TpU"
+          },
+          "boundary": {
+            "ref": "sha256:JHHl080IXHmlNjLBxekvAELiFdXmvpbrMfMVvD36KvQ",
+            "prover": {
+              "tool": "rootz.shirudo-evidence",
+              "version": "0.1.0",
+              "verdict": "contained",
+              "output": "sha256:-XteNw_fxP58dqRp_dqEQByozpFYXPJIiqn9kEES_XY"
+            }
+          },
+          "supersedes": "sha256:Nozva_d8x4-TUR3rPA6-M4IATI_EjLKiFaYm6rG4RlU",
+          "not_before": "2026-11-24T19:38:28.665Z",
+          "expires": "2026-12-24T19:39:28.665Z",
+          "nonce": "vt_zvzAWPm3qmDdax68Vug"
+        },
+        "proofs": [
+          {
+            "suite": "rootz.sign-mcp.v1",
+            "envelope": {
+              "v": 1,
+              "iss": "lab.rootz.global",
+              "kid": "officer-lab",
+              "canon": "RFC8785",
+              "payload": {
+                "alg": "sha-256",
+                "hash": "n22Pol_K5qazUXBZyp2tdzVGkvpwV45_N6siCXnyiXE"
+              },
+              "ts": "2026-11-24T19:39:28Z",
+              "exp": "2026-11-24T19:44:28Z",
+              "nonce": "3tXNBlPY1ITLeuntW4EV8w",
+              "ctx": {
+                "kind": "ask-orders.order.v1"
+              },
+              "algs": [
+                "ecdsa-p256",
+                "ed25519"
+              ],
+              "sigs": {
+                "ecdsa-p256": "MEUCIQCKwcy4NMRZ0uDoLJ7izT9tCa70XEa4UtgcBEeh7liw1QIgTeHX7-gf0Qg2oSBAFb-a4p2hWOgYa_De5VeO95jacAo",
+                "ed25519": "5vevGWxt-r9EdNKvtW4SJqdTXtQAwPX9Nvz7Rkry6WLzHkPDMeS0Ilqo78immntB18oTjFOGH1h7sS3NYG6iBg"
+              }
+            }
+          }
+        ]
+      },
+      "instruction": {
+        "format": "shirudo.tree-operation.v1",
+        "tree": {
+          "repository": "oci://127.0.0.1:15444/shirudo/local-tree",
+          "tree_id": "local-tree"
+        },
+        "operation": {
+          "op": "add",
+          "id": "cve-2026-31431-alg-splice-block",
+          "selector": {
+            "kconfig": {
+              "CONFIG_CRYPTO_USER_API_AEAD": [
+                "m",
+                "y"
+              ]
+            },
+            "labels": {
+              "role": [
+                "local"
+              ]
+            }
+          },
+          "artifact": {
+            "repository": "oci://127.0.0.1:15444/shirudo/local-tree",
+            "manifest_digest": "sha256:e935c649f4e388197239ba8fde73c3603d399827e52fc6ed21e0536b63c16f0a",
+            "layer_digest": "sha256:513dad78092705e9ce22bb6bb59566b4d24d6182f607d93c9ff0a5d4c7fb8122",
+            "payload_sha256": "sha256:3367f782aa6128e22b7b1e10ccca347d47552edd6eff12ff761c581188e1eaf8"
+          }
+        },
+        "fixes": [
+          "CVE-2026-31431"
+        ],
+        "effect": "enforce",
+        "stage": "canary",
+        "evidence": [
+          {
+            "role": "advisory",
+            "digest": "sha256:QeexSrT7qwIrYU4Tsw6eKbYo7iZYZFlqlvQzjNycRYk",
+            "receipt": null
+          },
+          {
+            "role": "authoring",
+            "digest": "sha256:S-wMTyqZkgv_noK-B-d_sBbBEYUgpiOrwvkJ0Y2Gt74",
+            "receipt": null
+          },
+          {
+            "role": "build",
+            "digest": "sha256:Hz-zp6lQ1IYZK4-Vs66Vi86MOTMS3vM-EeufY2fPOR0",
+            "receipt": null
+          }
+        ]
+      },
+      "accepted_at": "2026-11-24T19:39:28.940Z",
+      "seq": 7,
+      "operation_digest": "sha256:716a86f8ab30810adaf2c0b25df84d438317d58d1c49eb073e54199740cfe137"
+    },
+    "sig": "0xc3431080d01612552e301fcd014560ed972dd8f349eeaafdd2007a19ad1949a0308e65b3929ed4faa4f19b47e82607a5727ce1543c96c414985807d57edd8c921c"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 8,
+    "prev": "e88345be8de1b2bafb2af09a8d2c95439212200b0165eeedf24aab6e3f44ad45",
+    "type": "state.approve",
+    "author": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+    "at": "2026-11-24T19:39:43.722Z",
+    "body": {
+      "register": "bca74be4a177bdcf976622295c5ff80fcd589bc87d166e67fe45c378c58ae9e5",
+      "tpm_policy_digest": "244362f917588b6a326bcf5da5d46249cf56542f3813c00902ee3b042d80305b",
+      "policy_signature_b64": "OdgRytM7Xvd//91nSR/6XHTmRP2bseOMKEF69xljx3vh+pmXpi5V1qqvjiqo/iRsSGHbqXo5ApP/I+qZtImvVxpZHwOagWt/0YEHZaO974ggQw+cFaP+zhi97myjEDSqdtlUCjR27ln88ewUhFlKQw4EJyEa9DYaHhm8Lwu2IsD++QeSk3se1Op76WzBvy2iVUS2+VSNR4HWorFGB58SeMrbL9Gmk01SphrTsYzfq3efEvzxl2MMPSm6thPfoiVu48n7TYnbkbc365Q+fTkpGQOui6ysf40kOShAxn4RnKSQvYft4K3aoMCG5fATyC7DdraqEGsnK03N82T9/LC/Vw==",
+      "basis": "PolicyNV(0x01818E00 eq register) under PolicyAuthorize(owner)"
+    },
+    "sig": "0x2f0c4667965b5eed872b901e374611403db2ff5c4ed6955e8ae9a760f5572418088cbbdcb83f772c2b692d526d4cea66fc6ec4ce70e627c2fafd69f98927b8411b"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 9,
+    "prev": "29f1560d4dd377619dcd055fad1f6f757389b30ce45c2cfa98ebea325054ad3a",
+    "type": "key.refusal",
+    "author": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+    "at": "2026-11-24T19:39:55.011Z",
+    "body": {
+      "purpose": "shielded-service",
+      "condition": {
+        "policy": "release-only-in-an-instructed-measured-state",
+        "evidence": "bec2850e18c4f0fdd30e24baec9a663f1f478929d1cf192b98996eabeb05df40",
+        "register": "bca74be4a177bdcf976622295c5ff80fcd589bc87d166e67fe45c378c58ae9e5",
+        "ak_name": "000b9327b31aa8ba90bacd3b40c759caae5c01423dd54e7329625296f8ca1d89128a"
+      },
+      "rows": [
+        {
+          "check": "history-instructed-or-acknowledged",
+          "pass": false,
+          "detail": "uninstructed, unacknowledged: seq 3, 6"
+        }
+      ]
+    },
+    "sig": "0xa5938ad29b3e351b40b5953f727408567d8bf1d64de2648b1c349ce2a5ffa714165745d286171413c91359849855124f1fe1a1721cd483a5fc1c6dfc3f09bcc61c"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 10,
+    "prev": "9d91157137433a5ad9cddd46eae83fa2528be6f1eb5c7db12663240e77182d3c",
+    "type": "incident.ack",
+    "author": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+    "at": "2026-11-24T19:39:55.012Z",
+    "body": {
+      "seq": 3,
+      "operation_digest": "sha256:c3da45e51951451c1bcc87cbbda4c57b678548bb7c1e4e0d9a31c7fca3af5de9",
+      "reason": "rogue wider re-add; retired by instructed seq 4; node rebooted",
+      "acknowledged_by": "owner"
+    },
+    "sig": "0x9a396acb014a4f9df4c2612fb6008686f0faf1482c76e10164147bf69b950ff0598c08c3cca85ba0b97749ec195ace7b28aa0e9ddb21c9605d0d920583e1542d1c"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 11,
+    "prev": "56f6fd2b1f55d95a5cac38cc6d245933bf3f9ab3579e3688d7d9aaa70d083c11",
+    "type": "incident.ack",
+    "author": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+    "at": "2026-11-24T19:39:55.013Z",
+    "body": {
+      "seq": 6,
+      "operation_digest": "sha256:8f8291ae4e406c703ccc6cd506705c74518ae4209a3895be18706a8507f54578",
+      "reason": "rogue delete around the gate; shield re-added by instruction; node rebooted",
+      "acknowledged_by": "owner"
+    },
+    "sig": "0x62af420eef329ccee90c9304f745560ff718f0c5f7197659a3761882b64fb2f85364bc2e702948c6ff43877e7e0ac289afd1772cebeeaf3117d7c15e88bfa21c1c"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 12,
+    "prev": "d206b3dd480ec7fc1cfc348c81feed58fde7841ac497bd7d132b9e625a2ce4b0",
+    "type": "key.release",
+    "author": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+    "at": "2026-11-24T19:39:55.013Z",
+    "body": {
+      "purpose": "shielded-service",
+      "to": "043cd1f4814c33735bb2ebf1774264db8d7e58a8e75bc04abeb87c7d86ed4b589961ed0e3c6a481f55ebe0ff1edf05c1b017f40089201d7b3a842840397d2df406",
+      "sender_public_key": "0461432799a2d686bfa6ef364ad79aad8ba04c5e1c1d10867b154fcb0cb38904de47f2faf33630a8dfea7f2895c87e7520bc5344f1eecfb2c45ab50bef4fdcd2a2",
+      "condition": {
+        "policy": "release-only-in-an-instructed-measured-state",
+        "evidence": "bec2850e18c4f0fdd30e24baec9a663f1f478929d1cf192b98996eabeb05df40",
+        "register": "bca74be4a177bdcf976622295c5ff80fcd589bc87d166e67fe45c378c58ae9e5",
+        "ak_name": "000b9327b31aa8ba90bacd3b40c759caae5c01423dd54e7329625296f8ca1d89128a"
+      },
+      "key_sha256": "07d156df4b484fc12ede058f010f4ded1104b91bfbb6b8d2e6db702e82cc9738",
+      "package": {
+        "ciphertext": "ca2d40b89540f85b04c043ae1d7056f70e35069053bf7d577a668f007345da12a3a71739b5af76f124a45bd183c65e5db1",
+        "iv": "93b2e2b3479faefa2553f8d5",
+        "authTag": "fa3022f43b6e709e810973bc0a811c03"
+      }
+    },
+    "sig": "0x3bef1883f9825dbf7f1df438127a4c63e7b57ccbdd83ffa08559dad6b867a3573281e63a50f63746a711141190742acb989f77363d5e4a68fd631dd7e64172611c"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 13,
+    "prev": "f374ecb90c6df68b12a4b019042974b9a8b97608ed9d4f9af7c1a659d26608d7",
+    "type": "key.refusal",
+    "author": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+    "at": "2026-11-24T19:40:14.414Z",
+    "body": {
+      "purpose": "shielded-service",
+      "condition": {
+        "policy": "release-only-in-an-instructed-measured-state",
+        "evidence": "283ac4bb3bcf255de1eeb544eb83c4e8bdbbb4dee8e65d953158e95755642083",
+        "register": "f252eacf06402bc4d11f2135910cc576d6a1129eb49d0d2e5708198b9af493a1",
+        "ak_name": "000b9327b31aa8ba90bacd3b40c759caae5c01423dd54e7329625296f8ca1d89128a"
+      },
+      "rows": [
+        {
+          "check": "no-measured-without-instruction",
+          "pass": false,
+          "detail": "1 row(s)"
+        },
+        {
+          "check": "approved-state",
+          "pass": false,
+          "detail": "f252eacf06402bc4"
+        }
+      ]
+    },
+    "sig": "0x042a87adda8eb69688d6182208f3306bbf912272f9e57ea664a27c3f2a9abe63140c8cba8e6fbbc9ccb7a381c3f02b0fe15ef68ca13259a13f72b133f3c525251c"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 14,
+    "prev": "1d4c1a2519f5348fcab02b84e2d6c03926479e44fdbcd5b269bf556266da8a83",
+    "type": "incident.ack",
+    "author": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+    "at": "2026-11-25T01:22:43.301Z",
+    "body": {
+      "seq": 8,
+      "operation_digest": "sha256:cf2256d29c6d0e2a1b2bd31ab91a005a19b5ec9dc3ba71c672bd7aeeefb12b7f",
+      "reason": "rogue delete around the gate in the phase-2 demo; node rebooted since",
+      "acknowledged_by": "owner"
+    },
+    "sig": "0x71f872031165ea32c926ef64c7859b0a7bcbf90034f16c02186cdf9c873e7f1c247df80efb63fce94dd97f3bcb001d6e85548a99b4eea39d2f5ecc2e65e3e5c61c"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 15,
+    "prev": "8ded040e3dcf93117f742137210a0ebdef6699653826fa15c7400252d3c0012c",
+    "type": "instruction",
+    "author": "0x20189b6b4a1d922d28fbeda383e6a7999ecb9e0a",
+    "at": "2026-11-25T01:23:07.330Z",
+    "body": {
+      "order": {
+        "body": {
+          "kind": "ask-orders.order.v1",
+          "action": "policy.change",
+          "change": "widen",
+          "issuer": {
+            "account": "officer-lab",
+            "authority_root": "eip155:1:0xD36AAf65a91bB7dc69942cF6B6d1dBa4Ef171664"
+          },
+          "target": {
+            "gateway": "oci://127.0.0.1:15444/shirudo/local-tree",
+            "sandbox": "local-tree"
+          },
+          "policy": {
+            "format": "shirudo.tree-operation.v1",
+            "digest": "sha256:Q8RdIpiQwm1k1N1FETeWEhJK_IJE3PlMLjytfwn3xNU"
+          },
+          "boundary": {
+            "ref": "sha256:JHHl080IXHmlNjLBxekvAELiFdXmvpbrMfMVvD36KvQ",
+            "prover": {
+              "tool": "rootz.shirudo-evidence",
+              "version": "0.1.0",
+              "verdict": "contained",
+              "output": "sha256:xncOlgzvwGowUgD7ktvqVQ39AbjNwC6mRTiKsRA3Ad4"
+            }
+          },
+          "supersedes": "sha256:n22Pol_K5qazUXBZyp2tdzVGkvpwV45_N6siCXnyiXE",
+          "not_before": "2026-11-25T01:22:06.952Z",
+          "expires": "2026-12-25T01:23:06.952Z",
+          "nonce": "hAzjtfny5bBplsKiM5wsow"
+        },
+        "proofs": [
+          {
+            "suite": "rootz.sign-mcp.v1",
+            "envelope": {
+              "v": 1,
+              "iss": "lab.rootz.global",
+              "kid": "officer-lab",
+              "canon": "RFC8785",
+              "payload": {
+                "alg": "sha-256",
+                "hash": "csp9Vi8y5vwaZNNdf0_ZoyB6v6nDP3jahNj5Sw_m8fI"
+              },
+              "ts": "2026-11-25T01:23:06Z",
+              "exp": "2026-11-25T01:28:06Z",
+              "nonce": "cBtgwKM6TcQTyOjVPLxREA",
+              "ctx": {
+                "kind": "ask-orders.order.v1"
+              },
+              "algs": [
+                "ecdsa-p256",
+                "ed25519"
+              ],
+              "sigs": {
+                "ecdsa-p256": "MEUCIEQv7vipooMUre4-w7iA79odViF7osSlhFxNXAXid0TNAiEA6ZXOJu607bUguG7HF99BVF9u0GgTHQnERB0AWkncYeo",
+                "ed25519": "HJSHpDj2xFGfQOpixmP5ek5fjgP6DkOQrZmf4lokCQpIkVWvP7CfUDsoplr7tUpEYCKFZvFsh8VZEtwevDeEBA"
+              }
+            }
+          }
+        ]
+      },
+      "instruction": {
+        "format": "shirudo.tree-operation.v1",
+        "tree": {
+          "repository": "oci://127.0.0.1:15444/shirudo/local-tree",
+          "tree_id": "local-tree"
+        },
+        "operation": {
+          "op": "add",
+          "id": "cve-2026-31431-alg-splice-block",
+          "selector": {
+            "kconfig": {
+              "CONFIG_CRYPTO_USER_API_AEAD": [
+                "m",
+                "y"
+              ]
+            },
+            "labels": {
+              "role": [
+                "local"
+              ]
+            }
+          },
+          "artifact": {
+            "repository": "oci://127.0.0.1:15444/shirudo/local-tree",
+            "manifest_digest": "sha256:d0c8550b045a56f12ae9ebcc1a943916b2ebc18fcdad540ae0d02f58b7620fff",
+            "layer_digest": "sha256:ab077bb61a5ec38e522e4e90edbe2947eed1cd3215368d776b2f60186269781c",
+            "payload_sha256": "sha256:6f2e169e4b727c2ca69b0a9ab73be686b9fd909616683ddf8455d016ef3563fd"
+          }
+        },
+        "fixes": [
+          "CVE-2026-31431"
+        ],
+        "effect": "enforce",
+        "stage": "canary",
+        "evidence": [
+          {
+            "role": "advisory",
+            "digest": "sha256:QeexSrT7qwIrYU4Tsw6eKbYo7iZYZFlqlvQzjNycRYk",
+            "receipt": null
+          },
+          {
+            "role": "authoring",
+            "digest": "sha256:S-wMTyqZkgv_noK-B-d_sBbBEYUgpiOrwvkJ0Y2Gt74",
+            "receipt": null
+          },
+          {
+            "role": "build",
+            "digest": "sha256:BsFWvPL1xvKCZGDo1I3_ANOl7kfP9KGvoxk_9qYsReo",
+            "receipt": null
+          }
+        ],
+        "transition": {
+          "seq": 9,
+          "from_history_root": "9624d2908730c444ace61b314a0ccf137ec08be710e2a978a9c3b21db0a461a6",
+          "to_history_root": "2a6d7953c37825d9bbb71d3c6f548f06bda3894e882583380398418af6897419"
+        }
+      },
+      "accepted_at": "2026-11-25T01:23:07.330Z",
+      "seq": 9,
+      "operation_digest": "sha256:1af44ce2ff003140eb5dd32405960e9c5963480b6ac0f76fd9df4c1657dad29f"
+    },
+    "sig": "0x8835a1be62207ce393fe8db892888e738656cde4d624760f64c9960d197c2b795b6fe6f388bcf031ac71d2d9f6cfc021377564adaf47dd342d273daf468791eb1c"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 16,
+    "prev": "30f13d945f73d5b24a8859afe3b44a2204223f589f6336cc921a0b78769d638a",
+    "type": "transition.approve",
+    "author": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+    "at": "2026-11-25T01:23:13.243Z",
+    "body": {
+      "instruction": "sha256:Q8RdIpiQwm1k1N1FETeWEhJK_IJE3PlMLjytfwn3xNU",
+      "tree": {
+        "seq": 9,
+        "from_history_root": "9624d2908730c444ace61b314a0ccf137ec08be710e2a978a9c3b21db0a461a6",
+        "to_history_root": "2a6d7953c37825d9bbb71d3c6f548f06bda3894e882583380398418af6897419"
+      },
+      "node": {
+        "boot_id": "d0c52cdf-e389-4037-9f81-b0864dc27fa3",
+        "from_register": "d80b11ac24fbf5f1c765ee262049b807fcab565a122a6f5a73478acc11796f18",
+        "to_register": "b8c1d8cc7c1f618b78ce597fa3bd676699cfdd34af4f243e9af9f688fccec4dc",
+        "operations": [
+          {
+            "seq": 9,
+            "operation_digest": "sha256:1af44ce2ff003140eb5dd32405960e9c5963480b6ac0f76fd9df4c1657dad29f"
+          }
+        ]
+      },
+      "tpm_policy_digest": "76b65446b2e925a3666df2f1057efddb79ae19b770367997c8cd41bf669d7930",
+      "basis": "PolicyNV(0x01818E00 eq to_register) under PolicyAuthorize(owner)"
+    },
+    "sig": "0x76b6fe285a92c8bc840e5bc17f075b80b8dab4c0b4ae51bb8143466a3cba576c38bdc7f0d5755d702bb9ece9c5467a9596f0210b6ae2257dbbd7a1dfab99976f1c"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 17,
+    "prev": "7abdc93b80bd9b43125d316591c87860398235327cb0a8b6f68e8714bd8b7ce1",
+    "type": "key.release",
+    "author": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+    "at": "2026-11-25T01:23:13.244Z",
+    "body": {
+      "purpose": "post-upgrade-service",
+      "to": "043cd1f4814c33735bb2ebf1774264db8d7e58a8e75bc04abeb87c7d86ed4b589961ed0e3c6a481f55ebe0ff1edf05c1b017f40089201d7b3a842840397d2df406",
+      "sender_public_key": "0461432799a2d686bfa6ef364ad79aad8ba04c5e1c1d10867b154fcb0cb38904de47f2faf33630a8dfea7f2895c87e7520bc5344f1eecfb2c45ab50bef4fdcd2a2",
+      "condition": {
+        "kind": "transition",
+        "from_register": "d80b11ac24fbf5f1c765ee262049b807fcab565a122a6f5a73478acc11796f18",
+        "to_register": "b8c1d8cc7c1f618b78ce597fa3bd676699cfdd34af4f243e9af9f688fccec4dc",
+        "boot_id": "d0c52cdf-e389-4037-9f81-b0864dc27fa3",
+        "plan": "sha256:mPUHlrCOrfrY7ZBZ1uFVLFmWhqc3pgnRGV-r_-4SVi8",
+        "start_evidence": "bb7ee934a9d983dd105df935d702131ecdc8ec877501baa0e1733c6ad687828b",
+        "ak_name": "000b9327b31aa8ba90bacd3b40c759caae5c01423dd54e7329625296f8ca1d89128a",
+        "tpm_policy_digest": "76b65446b2e925a3666df2f1057efddb79ae19b770367997c8cd41bf669d7930"
+      },
+      "key_sha256": "665b94cb7c62d5bef289ada5ab632f9fc2b5b24b90c53a87c83c1c82430b2330",
+      "package": {
+        "ciphertext": "990d05b1f59ce50fc8c2e9ec7a4ab5d24dc870542f9f1dd8b39281ff954fe093a2a71ff48f5672303b",
+        "iv": "c64a239d2b4a56e8752ba1d2",
+        "authTag": "cdfd259bd1edab88d73093f1bf12fb53"
+      }
+    },
+    "sig": "0xec00093583232bd155b6b98dce9494f8735a3127958b76588b68453f1576c6b16fe8aa879c3202a3cdd5c28a3aed3bdfff2b974897f97a8f480a8a2152693dab1c"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 18,
+    "prev": "b00dc82097da218bbad21a56e35ed57a516620d0aa8793000decaa0c2d324d34",
+    "type": "transition.arrived",
+    "author": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+    "at": "2026-11-25T01:23:30.316Z",
+    "body": {
+      "approve_note": 16,
+      "arrived": true,
+      "register": "b8c1d8cc7c1f618b78ce597fa3bd676699cfdd34af4f243e9af9f688fccec4dc",
+      "evidence": "8e5883340a2ddd469aab832b51a9b5047b5c70647073add6577a1f37be1eec79",
+      "rows": [
+        {
+          "check": "same-boot",
+          "pass": true,
+          "detail": "d0c52cdf-e389-4037-9f81-b0864dc27fa3"
+        },
+        {
+          "check": "start-on-path",
+          "pass": true,
+          "detail": "start value reached after 1 record(s) of this boot"
+        },
+        {
+          "check": "path-exact",
+          "pass": true,
+          "detail": "2 predicted event(s), nothing else"
+        },
+        {
+          "check": "end-value",
+          "pass": true,
+          "detail": "b8c1d8cc7c1f618b… vs predicted b8c1d8cc7c1f618b…"
+        }
+      ]
+    },
+    "sig": "0x6a888a2901c9e2bb47351ff3f58f5022a6a10d77e3086540eeb9549b9570ad3d3eabff8723f7bdf88ad6cd9cbaab7535573b00ccc5a9145df574c0b1056044b41c"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 19,
+    "prev": "c78523a468d8836f70de761c0088292fd535961c2928cda61128d756e7eb57d8",
+    "type": "instruction",
+    "author": "0x20189b6b4a1d922d28fbeda383e6a7999ecb9e0a",
+    "at": "2026-11-25T01:23:30.698Z",
+    "body": {
+      "order": {
+        "body": {
+          "kind": "ask-orders.order.v1",
+          "action": "policy.change",
+          "change": "narrow",
+          "issuer": {
+            "account": "officer-lab",
+            "authority_root": "eip155:1:0xD36AAf65a91bB7dc69942cF6B6d1dBa4Ef171664"
+          },
+          "target": {
+            "gateway": "oci://127.0.0.1:15444/shirudo/local-tree",
+            "sandbox": "local-tree"
+          },
+          "policy": {
+            "format": "shirudo.tree-operation.v1",
+            "digest": "sha256:IVwg-DcKpkpa8-tbUb_4iiPx9NU83xz50iAXJz86GqQ"
+          },
+          "boundary": {
+            "ref": "sha256:JHHl080IXHmlNjLBxekvAELiFdXmvpbrMfMVvD36KvQ",
+            "prover": {
+              "tool": "rootz.shirudo-evidence",
+              "version": "0.1.0",
+              "verdict": "contained",
+              "output": "sha256:f2WYbEU3cUzEbCQBIb7zhuAjNuFSiUR5wu7wd75xQcw"
+            }
+          },
+          "supersedes": "sha256:csp9Vi8y5vwaZNNdf0_ZoyB6v6nDP3jahNj5Sw_m8fI",
+          "not_before": "2026-11-25T01:22:30.317Z",
+          "expires": "2026-12-25T01:23:30.317Z",
+          "nonce": "ne58K9pz0ibGWHBxmYvdJw"
+        },
+        "proofs": [
+          {
+            "suite": "rootz.sign-mcp.v1",
+            "envelope": {
+              "v": 1,
+              "iss": "lab.rootz.global",
+              "kid": "officer-lab",
+              "canon": "RFC8785",
+              "payload": {
+                "alg": "sha-256",
+                "hash": "Iuk3tKP3pVSECGAjRBQl2rg_J3c0u7PmamT_yX2bU0o"
+              },
+              "ts": "2026-11-25T01:23:30Z",
+              "exp": "2026-11-25T01:28:30Z",
+              "nonce": "RXe2QAQhXpmRjddY5dpJ2Q",
+              "ctx": {
+                "kind": "ask-orders.order.v1"
+              },
+              "algs": [
+                "ecdsa-p256",
+                "ed25519"
+              ],
+              "sigs": {
+                "ecdsa-p256": "MEYCIQCRxHSgrFdsQRwUrNUhx9AGE0xdeXf0iI_kjfKIFTBZxQIhAOesAHcSIdG229OlfugqVmrNHlMDeddH6cTODdILrRUP",
+                "ed25519": "rsqWFKPnCR1KDQhnnkVOW14NdEIXm52rz9gqsq4w9uh9VQqfRsmhmT9RztwOKNd-gGJglISHjdcTMyyyFGj8Bw"
+              }
+            }
+          }
+        ]
+      },
+      "instruction": {
+        "format": "shirudo.tree-operation.v1",
+        "tree": {
+          "repository": "oci://127.0.0.1:15444/shirudo/local-tree",
+          "tree_id": "local-tree"
+        },
+        "operation": {
+          "op": "delete",
+          "id": "cve-2026-31431-alg-splice-block",
+          "selector": {
+            "kconfig": {
+              "CONFIG_CRYPTO_USER_API_AEAD": [
+                "m",
+                "y"
+              ]
+            },
+            "labels": {
+              "role": [
+                "local"
+              ]
+            }
+          },
+          "artifact": {
+            "repository": "oci://127.0.0.1:15444/shirudo/local-tree",
+            "manifest_digest": "sha256:93a33dede25e706b20cf1da895ffb799ccaa278c2599e130c4fc96b36d32383f",
+            "layer_digest": "sha256:d41c0efdecc1ae9af2ffa9a9499caadad87d12855a0b4942b4a2966ee1a2ae6c",
+            "payload_sha256": "sha256:a67ff459cade87c52464ddb97f07b0b90f3a893fd85629c395179f3a3c2678a2"
+          }
+        },
+        "fixes": [],
+        "effect": "remove",
+        "stage": "retire",
+        "evidence": [
+          {
+            "role": "rollback",
+            "digest": "sha256:aA6P6BpOX2GfCH4TFB2PaOX-gLUlewrOucOCWMDTUUE",
+            "receipt": null
+          }
+        ],
+        "transition": {
+          "seq": 10,
+          "from_history_root": "2a6d7953c37825d9bbb71d3c6f548f06bda3894e882583380398418af6897419",
+          "to_history_root": "4d430b936965ac536d27546a5acfc5cfec403e73d3222b0f3c9c0ae374661dce"
+        }
+      },
+      "accepted_at": "2026-11-25T01:23:30.698Z",
+      "seq": 10,
+      "operation_digest": "sha256:f559a15d10f1459a1300362256612bd4e1129fb1176a00c9b8f47c92dde73d8f"
+    },
+    "sig": "0x7ad3098c957558591c951147f5e34021f3cc244d6e7e776b1dc881e025cb5d74639f6a47307408a0aea38620b15dc138f7c2b25406cb83974b1794875ed6e6a01b"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 20,
+    "prev": "96ca36fe24d2a9828561737b3a4cde141bc3fec762ddfda99686def88ca805af",
+    "type": "transition.approve",
+    "author": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+    "at": "2026-11-25T01:23:34.982Z",
+    "body": {
+      "instruction": "sha256:IVwg-DcKpkpa8-tbUb_4iiPx9NU83xz50iAXJz86GqQ",
+      "tree": {
+        "seq": 10,
+        "from_history_root": "2a6d7953c37825d9bbb71d3c6f548f06bda3894e882583380398418af6897419",
+        "to_history_root": "4d430b936965ac536d27546a5acfc5cfec403e73d3222b0f3c9c0ae374661dce"
+      },
+      "node": {
+        "boot_id": "d0c52cdf-e389-4037-9f81-b0864dc27fa3",
+        "from_register": "b8c1d8cc7c1f618b78ce597fa3bd676699cfdd34af4f243e9af9f688fccec4dc",
+        "to_register": "692107250315448644a1f4de1373e49e39002b75c03c5235063253dce87459a1",
+        "operations": [
+          {
+            "seq": 10,
+            "operation_digest": "sha256:f559a15d10f1459a1300362256612bd4e1129fb1176a00c9b8f47c92dde73d8f"
+          }
+        ]
+      },
+      "tpm_policy_digest": "f4ecaa620842547613698c75cb51df8336c9484e112142c2aabf0d8458dbac78"
+    },
+    "sig": "0x994da1dddb606ade648b2e56a574edc6ce5c01b185869e82ee700e8a387d75cb46e7d953d30f15abbf7a91f85d579e8cf01c7e33bb5d2c8a48c6452d7fda35c71b"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 21,
+    "prev": "13f9ab0bd4e269d9c3848933d020714e57a81558ca4a750057bbfd90876642f3",
+    "type": "key.release",
+    "author": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+    "at": "2026-11-25T01:23:38.050Z",
+    "body": {
+      "purpose": "transition-2",
+      "to": "043cd1f4814c33735bb2ebf1774264db8d7e58a8e75bc04abeb87c7d86ed4b589961ed0e3c6a481f55ebe0ff1edf05c1b017f40089201d7b3a842840397d2df406",
+      "sender_public_key": "0461432799a2d686bfa6ef364ad79aad8ba04c5e1c1d10867b154fcb0cb38904de47f2faf33630a8dfea7f2895c87e7520bc5344f1eecfb2c45ab50bef4fdcd2a2",
+      "condition": {
+        "kind": "transition",
+        "from_register": "b8c1d8cc7c1f618b78ce597fa3bd676699cfdd34af4f243e9af9f688fccec4dc",
+        "to_register": "692107250315448644a1f4de1373e49e39002b75c03c5235063253dce87459a1",
+        "boot_id": "d0c52cdf-e389-4037-9f81-b0864dc27fa3",
+        "plan": "sha256:lLqpsFZYDjx51Ijk3JdoOxNsQ8N7-h4Q-vBC-uUJ0fg",
+        "start_evidence": "8e5883340a2ddd469aab832b51a9b5047b5c70647073add6577a1f37be1eec79",
+        "ak_name": "000b9327b31aa8ba90bacd3b40c759caae5c01423dd54e7329625296f8ca1d89128a",
+        "tpm_policy_digest": "f4ecaa620842547613698c75cb51df8336c9484e112142c2aabf0d8458dbac78"
+      },
+      "key_sha256": "95c1b916fa4f35e53d151c32742c30ab0df731f391ac01aa34e175130fa3bda0",
+      "package": {
+        "ciphertext": "cd3c944a0905448271530e735e87a2448cd9002aa850a7238aed75d32fc795e2e6ca5909e6",
+        "iv": "f59dbcb37da7b8b82dbec93b",
+        "authTag": "1a8633cd99b0ffbf2bbf92c250bc26aa"
+      }
+    },
+    "sig": "0x99b61eb100e1819f77977f0b01a4a5fc1c090ef98a70ede42e7164bb84df5ff6071061f136492d06a9685038c544bccd08e907bc71f9a259e13158bfb0393a081c"
+  },
+  {
+    "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+    "index": 22,
+    "prev": "b7aa99569b10b296e8378e535886e5585c0fb3493a3cedb2be5d8b1a68cf698d",
+    "type": "transition.arrived",
+    "author": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+    "at": "2026-11-25T01:23:55.154Z",
+    "body": {
+      "arrived": false,
+      "register": "10cbd0443c19aa853c249b42dc7804367af85800c1af701641e3a0ff18be88c7",
+      "evidence": "92412fba445f6bf35e7c64f7320548dceff88ce09c477e90f4bb317a2d137021",
+      "rows": [
+        {
+          "check": "same-boot",
+          "pass": true,
+          "detail": "d0c52cdf-e389-4037-9f81-b0864dc27fa3"
+        },
+        {
+          "check": "start-on-path",
+          "pass": true,
+          "detail": "start value reached after 3 record(s) of this boot"
+        },
+        {
+          "check": "path-exact",
+          "pass": false,
+          "detail": "predicted 2 event(s): upatch_unload,tree_op; measured 4: upatch_unload,tree_op,upatch_load,tree_op"
+        },
+        {
+          "check": "end-value",
+          "pass": false,
+          "detail": "10cbd0443c19aa85… vs predicted 6921072503154486…"
+        }
+      ]
+    },
+    "sig": "0x716ada39999a841d79fd3d8947c35880b894bb6edeb43791ae9eb8b1a81d6f25602c72ad3ceae635a3570fb29ea433a4538f14fdb7a80e135aec14b0477a40be1c"
+  }
+]

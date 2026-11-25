@@ -1,0 +1,30 @@
+{
+  "wallet": "0xf3ee92417a3840aa283d9083569d5d03ea2e48e1",
+  "index": 17,
+  "prev": "7abdc93b80bd9b43125d316591c87860398235327cb0a8b6f68e8714bd8b7ce1",
+  "type": "key.release",
+  "author": "0x5f8633c9754554ab58d73f7354d6530b1af89e1a",
+  "at": "2026-11-25T01:23:13.244Z",
+  "body": {
+    "purpose": "post-upgrade-service",
+    "to": "043cd1f4814c33735bb2ebf1774264db8d7e58a8e75bc04abeb87c7d86ed4b589961ed0e3c6a481f55ebe0ff1edf05c1b017f40089201d7b3a842840397d2df406",
+    "sender_public_key": "0461432799a2d686bfa6ef364ad79aad8ba04c5e1c1d10867b154fcb0cb38904de47f2faf33630a8dfea7f2895c87e7520bc5344f1eecfb2c45ab50bef4fdcd2a2",
+    "condition": {
+      "kind": "transition",
+      "from_register": "d80b11ac24fbf5f1c765ee262049b807fcab565a122a6f5a73478acc11796f18",
+      "to_register": "b8c1d8cc7c1f618b78ce597fa3bd676699cfdd34af4f243e9af9f688fccec4dc",
+      "boot_id": "d0c52cdf-e389-4037-9f81-b0864dc27fa3",
+      "plan": "sha256:mPUHlrCOrfrY7ZBZ1uFVLFmWhqc3pgnRGV-r_-4SVi8",
+      "start_evidence": "bb7ee934a9d983dd105df935d702131ecdc8ec877501baa0e1733c6ad687828b",
+      "ak_name": "000b9327b31aa8ba90bacd3b40c759caae5c01423dd54e7329625296f8ca1d89128a",
+      "tpm_policy_digest": "76b65446b2e925a3666df2f1057efddb79ae19b770367997c8cd41bf669d7930"
+    },
+    "key_sha256": "665b94cb7c62d5bef289ada5ab632f9fc2b5b24b90c53a87c83c1c82430b2330",
+    "package": {
+      "ciphertext": "990d05b1f59ce50fc8c2e9ec7a4ab5d24dc870542f9f1dd8b39281ff954fe093a2a71ff48f5672303b",
+      "iv": "c64a239d2b4a56e8752ba1d2",
+      "authTag": "cdfd259bd1edab88d73093f1bf12fb53"
+    }
+  },
+  "sig": "0xec00093583232bd155b6b98dce9494f8735a3127958b76588b68453f1576c6b16fe8aa879c3202a3cdd5c28a3aed3bdfff2b974897f97a8f480a8a2152693dab1c"
+}
