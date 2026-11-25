@@ -1,0 +1,121 @@
+{
+ "source": "shirudo attest on test target rootz3 (swtpm, TCG on Lima arm64), shirudo@0132734; attest verify verdict ok",
+ "register_value": "5f0f393915fba92bc2eb26fa74dd240534a7db6cd1e21cf57753817238925182",
+ "eventlog": [
+  {
+   "schema": 1,
+   "ts": "2026-07-27T20:44:10Z",
+   "nv_index": "0x01818E00",
+   "alg": "sha256",
+   "digest": "6c8d188a7cb6e60e5ebfca26812cff805ed95222cc3b0259f4859d98d443a927",
+   "type": "init",
+   "boot_id": "dc5b0259-171c-4a4c-afb2-3e86bfe5dcb0",
+   "tpm_reset_count": 1,
+   "cert_sha256": "933a2384cf65a67b5e93a3518ca7649c26891c6d3795113065427a74bcab6050",
+   "certs": [
+    "de619d358b048360ae00ab5b58b8fa9e33fa7322d7fce9df9e199581342a86a4",
+    "f9de7866433ba1523b829b3e1b1ac652f550b907bd0ab367cb568c01087c3158"
+   ],
+   "set_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "tree_root": "0000000000000000000000000000000000000000000000000000000000000000",
+   "set": [],
+   "pcr": 9,
+   "pcr_before": "0000000000000000000000000000000000000000000000000000000000000000",
+   "phase_pcr": 11,
+   "phase_before": "0000000000000000000000000000000000000000000000000000000000000000",
+   "bound_in": "initrd",
+   "nv_name": "000b12bd4f3a370d4fcd63e1dde6d87ee87a3c0fb79482e9a9a27fa7265bea1a6603",
+   "nv_writer_public": "8663fa2771beb3c05c781fc77ec658291748dbf78520b2167e31b6b2ddf877e70dc591e16a73930ca30bebb372eb79fa457fe8a5b8be1893834f1bccb7e9024eb12441f16e9b6d2859610065d9919a1f3e53ee799e3e440522531bda6c777e9ac4aeb643bab25dde43559468f6437e1d7eb447ae4741b1543b82e9ad74dfedaac5dfe8369b14714b4b925e94dd5c72066723647b52a0a795f4dbf02f227e08a1162118cd03ab8cf2113a523d486bb8361560ec741079a353f4f0752c4f8c6d0648efa52bb05ee419dd5147ff4e036fe07a02e78044d1d208a4a36e54f0f347ec71353ae62aa0c24874013d98b0e02ac13de65d30b88e72448fdf25ad51da49401d5742b7268490eb0eeac1766a53a54fc2dbbad51a0a2b70d91a72e58478fe838b665aab7229aa7a32464e8afc68f685005a8b84ddfaa70b03c2168abb2345d7fb321c625c4534fa28c847c044906f9e03a12c5d0b5987b5a32849460a7d58b8bbc7b1de44a81261837470e205ee517d3cc3ad084775c8ac111ef291008e6561",
+   "anchor": "nvpcr-init:shirudo:0x1818e00:000b12bd4f3a370d4fcd63e1dde6d87ee87a3c0fb79482e9a9a27fa7265bea1a6603",
+   "anchor_digest": "4b9916c4b51f81b7a58230b41f97bfa30956b31bae9741d2c84380f3161328b0",
+   "chain": "5a6dd5705ec9f7c52430b928bb4f184b63f88515acb1c7d32a732e79a8492f15"
+  },
+  {
+   "schema": 1,
+   "ts": "2026-11-24T17:46:59Z",
+   "nv_index": "0x01818E00",
+   "alg": "sha256",
+   "digest": "78560fd15bfced682455a57c6ef26d69dc4a94d4258fc6709f548af04367b661",
+   "type": "upatch_load",
+   "boot_id": "dc5b0259-171c-4a4c-afb2-3e86bfe5dcb0",
+   "upatch": {
+    "name": "cve-2026-31431-alg-splice-block",
+    "payload_sha256": "6783421f953729c6ac9356744430f02aff4559f126032d5b4cfc6ce4616e8b12"
+   }
+  },
+  {
+   "schema": 1,
+   "ts": "2026-11-24T17:47:00Z",
+   "nv_index": "0x01818E00",
+   "alg": "sha256",
+   "digest": "534e44f487f2737b444ca2217b90ff5b77d1ddd32300a9bd251b2f36f6439b2e",
+   "type": "tree_op",
+   "boot_id": "dc5b0259-171c-4a4c-afb2-3e86bfe5dcb0",
+   "tree": {
+    "seq": 1,
+    "op": "add",
+    "id": "cve-2026-31431-alg-splice-block",
+    "operation_digest": "sha256:7476df95b91890b80d1c366cdbc09dd04aaa662b441e61d52611a543f091b728"
+   },
+   "chain": "87831f11293db6f8c3396c084973a336ffd258b1e741910787a4d3242823b9a8"
+  },
+  {
+   "schema": 1,
+   "ts": "2026-11-24T17:47:11Z",
+   "nv_index": "0x01818E00",
+   "alg": "sha256",
+   "digest": "a9319f124345a07161a01d46075a6c5ca984e8de646f5de734232b369d218dfa",
+   "type": "upatch_unload",
+   "boot_id": "dc5b0259-171c-4a4c-afb2-3e86bfe5dcb0",
+   "upatch": {
+    "name": "cve-2026-31431-alg-splice-block",
+    "payload_sha256": "6783421f953729c6ac9356744430f02aff4559f126032d5b4cfc6ce4616e8b12"
+   }
+  },
+  {
+   "schema": 1,
+   "ts": "2026-11-24T17:47:12Z",
+   "nv_index": "0x01818E00",
+   "alg": "sha256",
+   "digest": "10dfcb4ebb070ed7cab17b8945cab4da18515c3377618c7e2cb607301ade7470",
+   "type": "tree_op",
+   "boot_id": "dc5b0259-171c-4a4c-afb2-3e86bfe5dcb0",
+   "tree": {
+    "seq": 2,
+    "op": "delete",
+    "id": "cve-2026-31431-alg-splice-block",
+    "operation_digest": "sha256:7b55219600252fdf7b3874b6e3527979c8af3d09588ad1cae2dc1c7bf9c09b46"
+   },
+   "chain": "c58fb29b2dab0c3ce2413d73355715f6263826f33c23e53870bab94c1c36f834"
+  },
+  {
+   "schema": 1,
+   "ts": "2026-11-24T17:47:24Z",
+   "nv_index": "0x01818E00",
+   "alg": "sha256",
+   "digest": "dec51b1d817582db2fe805ba83d3be500239658f87ab340be04998bbf66e6b22",
+   "type": "upatch_load",
+   "boot_id": "dc5b0259-171c-4a4c-afb2-3e86bfe5dcb0",
+   "upatch": {
+    "name": "cve-2026-31431-alg-splice-block",
+    "payload_sha256": "f50f738a4dcc3bbc7c0b42f1ed29d428c3bcefb85b79c34c5aec52970a29eca0"
+   }
+  },
+  {
+   "schema": 1,
+   "ts": "2026-11-24T17:47:25Z",
+   "nv_index": "0x01818E00",
+   "alg": "sha256",
+   "digest": "9ea35eed1766921204402de174d0a7f282a7227d53581f5db24518be6560ce2a",
+   "type": "tree_op",
+   "boot_id": "dc5b0259-171c-4a4c-afb2-3e86bfe5dcb0",
+   "tree": {
+    "seq": 3,
+    "op": "add",
+    "id": "cve-2026-31431-alg-splice-block",
+    "operation_digest": "sha256:d9d63cb2f373138875475585d7c1678a781a44aaecf8e16ef7bcb3f591553f14"
+   },
+   "chain": "5f0f393915fba92bc2eb26fa74dd240534a7db6cd1e21cf57753817238925182"
+  }
+ ]
+}

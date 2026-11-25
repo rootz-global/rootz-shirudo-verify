@@ -1,0 +1,13 @@
+{
+  "name": "rootz-shirudo-verify",
+  "version": "0.1.0",
+  "description": "Check a Shirudo node's TPM register yourself, and plan a kernel-shield change from a known state to a known state before it runs.",
+  "type": "module",
+  "license": "BSD-2-Clause",
+  "author": "Rootz Corp",
+  "engines": { "node": ">=22.18" },
+  "exports": { ".": "./src/index.ts" },
+  "bin": { "rootz-shirudo-verify": "./src/cli.ts" },
+  "scripts": { "test": "node --test test/*.test.ts" },
+  "repository": { "type": "git", "url": "https://github.com/rootz-global/rootz-shirudo-verify" }
+}
